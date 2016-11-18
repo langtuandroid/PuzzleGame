@@ -36,7 +36,8 @@
     if (_index > 0) {
         _index --;
         Stage *stage = _stages[(NSUInteger)_index];
-        _lbStageLevel.text = stage.name;
+        NSString *name = [stage.name stringByReplacingOccurrencesOfString:@"ステージ" withString:@"Level"];
+        _lbStageLevel.text = name;
         
         self.btnNext.alpha = 1;
         if (_index == 0) {
@@ -50,7 +51,8 @@
     if (_index < [_stages count] - 1) {
         _index ++;
         Stage *stage = _stages[(NSUInteger)_index];
-        _lbStageLevel.text = stage.name;
+        NSString *name = [stage.name stringByReplacingOccurrencesOfString:@"ステージ" withString:@"Level"];
+        _lbStageLevel.text = name;
         
         self.btnBack.alpha = 1;
         if (_index == [_stages count] - 1) {
@@ -64,7 +66,7 @@
     PlayViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:kPlayViewControllerID];
     vc.stage = _stages[(NSUInteger)_index];
 
-    self.title = @"戻る";
+    self.title = @"Return";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -84,7 +86,9 @@
     _index = 0;
 
     Stage *stage = _stages[(NSUInteger)_index];
-    _lbStageLevel.text = stage.name;
+    NSString *name = [stage.name stringByReplacingOccurrencesOfString:@"ステージ" withString:@"Level"];
+    _lbStageLevel.text = name;
+    
 
     _btnBack.alpha = 0;
     if ([_stages count] == 1) {

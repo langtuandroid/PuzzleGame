@@ -293,7 +293,7 @@
             </objects>
             <point key="canvasLocation" x="321" y="955"/>
         </scene>
-        <!--ランキング-->
+        <!--Ranking-->
         <scene sceneID="xdL-75-NPT">
             <objects>
                 <viewController id="YWP-U2-qEH" customClass="RankingViewController" sceneMemberID="viewController">
@@ -364,13 +364,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ランキング" id="LlW-eC-IsS">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="k6G-Sv-nCt">
+                    <navigationItem key="navigationItem" title="Ranking" id="LlW-eC-IsS">
+                        <barButtonItem key="leftBarButtonItem" title="Return" style="plain" id="k6G-Sv-nCt">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" id="2CX-Ua-HlB">
                                 <rect key="frame" x="16" y="7" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="ホーム">
+                                <state key="normal" title="Home">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
