@@ -55,7 +55,8 @@ static const NSTimeInterval AnimationSpeed = 0.2;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.title = _stage.name;
+    NSString *name = [_stage.name stringByReplacingOccurrencesOfString:@"ステージ" withString:@"Level"];
+    self.title = name;
 }
 
 #pragma mark - Memory management
@@ -116,7 +117,7 @@ static const NSTimeInterval AnimationSpeed = 0.2;
 #pragma mark - MISC
 - (void)setupView
 {
-    UIBarButtonItem *sampleButton = [[UIBarButtonItem alloc] initWithTitle:@"見本"
+    UIBarButtonItem *sampleButton = [[UIBarButtonItem alloc] initWithTitle:@"Sample"
                                                                      style:UIBarButtonItemStyleBordered
                                                                     target:self
                                                                     action:@selector(goToSample)];
@@ -172,7 +173,7 @@ static const NSTimeInterval AnimationSpeed = 0.2;
         [self stopTimerIfNeeded];
 
         [[UIAlertView SH_alertViewWithTitle:@""
-                                andMessage:@"残念！時間切れです。"
+                                andMessage:@"Sorry! Time is over."
                               buttonTitles:nil
                                cancelTitle:@"OK"
                                  withBlock:^(NSInteger buttonIndex){
@@ -196,7 +197,7 @@ static const NSTimeInterval AnimationSpeed = 0.2;
     vc.image = self.boardImage;
     vc.time  = [_lbTimer.text intValue];
     vc.stageName = _stage.name;
-    self.title = @"戻る";
+    self.title = @"Return";
     [self.navigationController pushViewController:vc animated:YES];
 }
 

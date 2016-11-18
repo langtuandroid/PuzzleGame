@@ -54,7 +54,8 @@
 #pragma mark - MISC
 - (void)setupView
 {
-    self.title = _stageName;
+    NSString *name = [_stageName stringByReplacingOccurrencesOfString:@"ステージ" withString:@"Level"];
+    self.title = name;
 
     _sampleImage.image = _image;
     _mTimer.text = [NSString stringWithFormat:@"%ld", (long) _time];

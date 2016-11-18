@@ -59,7 +59,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
             [self initPickerStage];
 
             Stage *stage = _stages[0];
-            _tfStage.text = stage.name;
+            NSString *name = [stage.name stringByReplacingOccurrencesOfString:@"ステージ" withString:@"Level"];
+            _tfStage.text = name;
 
             [SVProgressHUD dismiss];
 
@@ -95,8 +96,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
                 _rankingList = ret.data;
 
                 // Set title segment
-                [_segmentSwitch setTitle:[NSString stringWithFormat:@"時間 (全%li人中)", (long)[_rankingList count]] forSegmentAtIndex:0];
-                [_segmentSwitch setTitle:@"先着" forSegmentAtIndex:1];
+                [_segmentSwitch setTitle:[NSString stringWithFormat:@"Time", (long)[_rankingList count]] forSegmentAtIndex:0];
+                [_segmentSwitch setTitle:@"First arrival" forSegmentAtIndex:1];
                 [self.rankingClearTable reloadData];
 
                 [SVProgressHUD dismiss];
@@ -120,8 +121,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
                 _rankingList = ret.data;
 
                 // Set title segment
-                [_segmentSwitch setTitle:@"時間" forSegmentAtIndex:0];
-                [_segmentSwitch setTitle:[NSString stringWithFormat:@"先着 (全%li人中)", (long)[_rankingList count]] forSegmentAtIndex:1];
+                [_segmentSwitch setTitle:@"First arrival" forSegmentAtIndex:0];
+                [_segmentSwitch setTitle:[NSString stringWithFormat:@"Time", (long)[_rankingList count]] forSegmentAtIndex:1];
                 [self.rankingClearTable reloadData];
 
                 [SVProgressHUD dismiss];
@@ -148,16 +149,16 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
     RankingViewCell *cell = (RankingViewCell *)[tableView dequeueReusableCellWithIdentifier:@"RankingViewCell"];
     if ([_kindOfRanking isEqualToString:@"timeRanking"]) {
         TimeRanking *objRanking = (_rankingList)[(NSUInteger)indexPath.row];
-        cell.lblRank.text = [NSString stringWithFormat:@"%ld位", (long)indexPath.row + 1];
+        cell.lblRank.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row + 1];
         cell.lblName.text = objRanking.nickname;
 
         if ([objRanking.playerId isEqualToString:baas.session.user.ID]) {
             cell.lblName.font = [UIFont boldSystemFontOfSize:18.0f];
         }
-        cell.lblTime.text = [NSString stringWithFormat:@"%d sec", objRanking.score];
+        cell.lblTime.text = [NSString stringWithFormat:@"%ld sec", (long)objRanking.score];
     } else {
         FirstComeRanking *objRanking = (_rankingList)[(NSUInteger)indexPath.row];
-        cell.lblRank.text = [NSString stringWithFormat:@"%ld位", (long)indexPath.row + 1];
+        cell.lblRank.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row + 1];
         cell.lblName.text = objRanking.nickname;
 
         if ([objRanking.playerId isEqualToString:baas.session.user.ID]) {
@@ -254,8 +255,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
     _rankingClearTable.delegate = self;
     _rankingClearTable.dataSource = self;
 
-    [_segmentSwitch setTitle:@"時間 (全500人中)" forSegmentAtIndex:0];
-    [_segmentSwitch setTitle:@"先着" forSegmentAtIndex:1];
+    [_segmentSwitch setTitle:@"Time" forSegmentAtIndex:0];
+    [_segmentSwitch setTitle:@"First arrival" forSegmentAtIndex:1];
     _segmentSwitch.selectedSegmentIndex = 0;
 
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pickerDoneClicked)];
@@ -304,8 +305,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
             if (err == nil) {
                 _rankingList = ret.data;
                 // Set title segment
-                [_segmentSwitch setTitle:[NSString stringWithFormat:@"時間 (全%li人中)", (long) [_rankingList count]] forSegmentAtIndex:0];
-                [_segmentSwitch setTitle:@"先着" forSegmentAtIndex:1];
+                [_segmentSwitch setTitle:[NSString stringWithFormat:@"Time", (long) [_rankingList count]] forSegmentAtIndex:0];
+                [_segmentSwitch setTitle:@"First arrival" forSegmentAtIndex:1];
                 [self.rankingClearTable reloadData];
                 [SVProgressHUD dismiss];
             } else {
@@ -323,8 +324,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
             if (err == nil) {
                 _rankingList = ret.data;
                 // Set title segment
-                [_segmentSwitch setTitle:@"時間" forSegmentAtIndex:0];
-                [_segmentSwitch setTitle:[NSString stringWithFormat:@"先着 (全%li人中)", (long)[_rankingList count]] forSegmentAtIndex:1];
+                [_segmentSwitch setTitle:@"First arrival" forSegmentAtIndex:0];
+                [_segmentSwitch setTitle:[NSString stringWithFormat:@"Time", (long)[_rankingList count]] forSegmentAtIndex:1];
                 [self.rankingClearTable reloadData];
                 [SVProgressHUD dismiss];
             } else {
