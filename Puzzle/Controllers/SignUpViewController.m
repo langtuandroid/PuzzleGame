@@ -47,8 +47,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
         [player signUpWithBlock:^(ABResult *ret, ABError *err){
             [SVProgressHUD dismiss];
             if (err == nil) {
-                [[UIAlertView SH_alertViewWithTitle:@"ご確認"
-                                        andMessage:@"ご案内のためのメールが送信されました。ご確認ください。"
+                [[UIAlertView SH_alertViewWithTitle:@"Confirmation"
+                                        andMessage:@"An email has been sent for guidance. Please confirm."
                                       buttonTitles:nil
                                        cancelTitle:@"OK"
                                          withBlock:^(NSInteger buttonIndex){
@@ -166,7 +166,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
     err = [Validator validateFor:@"Email"
                            value:_tfEmail.text
                            rules:@[@(ValidationRuleRequired), @(ValidationRuleEmail)]
-                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"メールアドレスは入力必須です。"}, @(ValidationRuleEmail):@{@"msg":@"無効なメールアドレスです。"}}];
+                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"E-mail address is mandatory."}, @(ValidationRuleEmail):@{@"msg":@"Invalid email address!"}}];
     if (err) {
         _lbError.text = err.localizedDescription;
         _tfEmail.layer.borderColor = [UIColor redColor].CGColor;
@@ -178,7 +178,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
     err = [Validator validateFor:@"ID"
                            value:_tfId.text
                            rules:@[@(ValidationRuleRequired), @(ValidationRuleLoginId)]
-                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"IDは入力必須です。"}, @(ValidationRuleLoginId):@{@"msg":@"IDは4桁から20桁である必要があります。"}}];
+                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"ID is mandatory."}, @(ValidationRuleLoginId):@{@"msg":@"ID must be 4 digits to 20 digits."}}];
     if (err) {
         _lbError.text = err.localizedDescription;
         _tfId.layer.borderColor = [UIColor redColor].CGColor;
@@ -190,7 +190,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
     err = [Validator validateFor:@"Nickname"
                            value:_tfNickName.text
                            rules:@[@(ValidationRuleRequired), @(ValidationRuleNickname)]
-                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"ニックネームは入力必須です。"}, @(ValidationRuleNickname):@{@"msg":@"ニックネームは4桁から20桁である必要があります。"}}];
+                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"Nickname is mandatory."}, @(ValidationRuleNickname):@{@"msg":@"Nickname must be 4 to 20 digits."}}];
     if (err) {
         _lbError.text = err.localizedDescription;
         _tfNickName.layer.borderColor = [UIColor redColor].CGColor;
@@ -202,7 +202,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT   = 162;
     err = [Validator validateFor:@"Password"
                            value:_tfPassword.text
                            rules:@[@(ValidationRuleRequired), @(ValidationRulePassword)]
-                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"パスワードは入力必須です。"}, @(ValidationRulePassword):@{@"msg":@"パスワードは8桁から20桁である必要があります。"}}];
+                        ruleArgs:@{@(ValidationRuleRequired):@{@"msg":@"Password is mandatory."}, @(ValidationRulePassword):@{@"msg":@"Password must be 8 to 20 digits."}}];
     if (err) {
         _lbError.text = err.localizedDescription;
         _tfPassword.layer.borderColor = [UIColor redColor].CGColor;

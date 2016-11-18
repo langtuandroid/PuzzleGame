@@ -44,7 +44,7 @@
         } option:ABUserLogInOptionLogInAutomatically];
 
     } else {
-        [_lbErrMessage setText:@"入力された内容に誤りがあります。"];
+        [_lbErrMessage setText:@"Input information is not valid!"];
     }
 }
 
