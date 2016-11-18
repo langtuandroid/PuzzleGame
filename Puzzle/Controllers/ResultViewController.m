@@ -48,8 +48,9 @@
 #pragma mark - MISC
 - (void)setupView
 {
-    _lblResult.text = [NSString stringWithFormat:@"%ld秒", (long) _score];
-    _lbResultTitle.text = _stageName;
+    _lblResult.text = [NSString stringWithFormat:@"%ld sec", (long) _score];
+    NSString *name = [_stageName stringByReplacingOccurrencesOfString:@"ステージ" withString:@"Level"];
+    _lbResultTitle.text = name;
 }
 
 - (void)backToResultView
@@ -94,7 +95,7 @@
                         /* NOP */
                     }
                 }
-                firstComeRankingText = [NSString stringWithFormat:@"%li位/%li人中", (long)rank, (long)[foundArray count]];
+                firstComeRankingText = [NSString stringWithFormat:@"%li/%li", (long)rank, (long)[foundArray count]];
             }
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -130,7 +131,7 @@
                         /* NOP */
                     }
                 }
-                timeRankingText = [NSString stringWithFormat:@"%li位/%li人中", (long)rank, (long)[foundArray count]];
+                timeRankingText = [NSString stringWithFormat:@"%li/%li", (long)rank, (long)[foundArray count]];
             }
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
