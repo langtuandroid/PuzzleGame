@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31CD987114E2B9442D8FA95E /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CD9B7FDD07AD0027889E22 /* UIImage+Resize.m */; };
+		6682F0475AAD4E78865D6604 /* libPods-Puzzle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 125823707CACC23C80273F18 /* libPods-Puzzle.a */; };
+		8D79A51C1A8DCCEA00C1C7A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53520D919ED09EE008F5AED /* Main.storyboard */; };
+		8DD5B1D01B3D621800B15D9E /* FirstComeRanking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1C31B3D621800B15D9E /* FirstComeRanking.m */; };
+		8DD5B1D11B3D621800B15D9E /* FirstComeRankingSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1C51B3D621800B15D9E /* FirstComeRankingSequence.m */; };
+		8DD5B1D21B3D621800B15D9E /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1C71B3D621800B15D9E /* Image.m */; };
+		8DD5B1D31B3D621800B15D9E /* Introduction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1C91B3D621800B15D9E /* Introduction.m */; };
+		8DD5B1D41B3D621800B15D9E /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1CB1B3D621800B15D9E /* Player.m */; };
+		8DD5B1D51B3D621800B15D9E /* Stage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1CD1B3D621800B15D9E /* Stage.m */; };
+		8DD5B1D61B3D621800B15D9E /* TimeRanking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1CF1B3D621800B15D9E /* TimeRanking.m */; };
+		8DD5B1DD1B3D622300B15D9E /* TileBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1D91B3D622300B15D9E /* TileBoard.m */; };
+		8DD5B1DE1B3D622300B15D9E /* TileBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5B1DB1B3D622300B15D9E /* TileBoardView.m */; };
+		B72099411A15A39200D516BF /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72099401A15A39200D516BF /* IntroductionViewController.m */; };
+		B723E1451A199537000625A9 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B723E1441A199537000625A9 /* TopViewController.m */; };
+		B724D8531A1AF9180022F064 /* AppiariesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B724D8521A1AF9180022F064 /* AppiariesSDK.framework */; };
+		B75FA4B51A19ABB20000F5BE /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75FA4B41A19ABB20000F5BE /* ResultViewController.m */; };
+		B75FA4B81A19B1A40000F5BE /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75FA4B71A19B1A40000F5BE /* RankingViewController.m */; };
+		B7974D611A14602E00973335 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7974D601A14602E00973335 /* SignUpViewController.m */; };
+		B7D2F0C41A1200EC009E8869 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D2F0C31A1200EC009E8869 /* LogInViewController.m */; };
+		C5ADA790A7272BF75FAEF6D1 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = C5ADA98DDBBDCF2B81A94943 /* Validator.m */; };
+		C5ADAC98EEFC23E114598E08 /* PreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAE52FE60445D36188219 /* PreferenceHelper.m */; };
+		C5ADAF9AE2FE3BA51A3A4034 /* RankingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAB2812AD1D2E21C2D68F /* RankingViewCell.m */; };
+		D62552C91A1DA79000B700D8 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62552C81A1DA79000B700D8 /* PlayViewController.m */; };
+		D63B7AF519EE5CCE00B0C93D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63B7AF419EE5CCE00B0C93D /* Images.xcassets */; };
+		D68D0CDC1A1DC8AB00D7CD45 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68D0CDB1A1DC8AB00D7CD45 /* SampleViewController.m */; };
+		F53520C819ED09EE008F5AED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53520C719ED09EE008F5AED /* Foundation.framework */; };
+		F53520CA19ED09EE008F5AED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53520C919ED09EE008F5AED /* CoreGraphics.framework */; };
+		F53520CC19ED09EE008F5AED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53520CB19ED09EE008F5AED /* UIKit.framework */; };
+		F53520D219ED09EE008F5AED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53520D019ED09EE008F5AED /* InfoPlist.strings */; };
+		F53520D419ED09EE008F5AED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F53520D319ED09EE008F5AED /* main.m */; };
+		F53520D819ED09EE008F5AED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53520D719ED09EE008F5AED /* AppDelegate.m */; };
+		F535211819ED3847008F5AED /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F535210A19ED3847008F5AED /* SplashViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		125823707CACC23C80273F18 /* libPods-Puzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Puzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31CD90A631D0EF5ABFB5A3ED /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		31CD9126D0438064F8417D67 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		31CD9B7FDD07AD0027889E22 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		8DD5B1C21B3D621800B15D9E /* FirstComeRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstComeRanking.h; sourceTree = "<group>"; };
+		8DD5B1C31B3D621800B15D9E /* FirstComeRanking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstComeRanking.m; sourceTree = "<group>"; };
+		8DD5B1C41B3D621800B15D9E /* FirstComeRankingSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstComeRankingSequence.h; sourceTree = "<group>"; };
+		8DD5B1C51B3D621800B15D9E /* FirstComeRankingSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstComeRankingSequence.m; sourceTree = "<group>"; };
+		8DD5B1C61B3D621800B15D9E /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		8DD5B1C71B3D621800B15D9E /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		8DD5B1C81B3D621800B15D9E /* Introduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Introduction.h; sourceTree = "<group>"; };
+		8DD5B1C91B3D621800B15D9E /* Introduction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Introduction.m; sourceTree = "<group>"; };
+		8DD5B1CA1B3D621800B15D9E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		8DD5B1CB1B3D621800B15D9E /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		8DD5B1CC1B3D621800B15D9E /* Stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage.h; sourceTree = "<group>"; };
+		8DD5B1CD1B3D621800B15D9E /* Stage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stage.m; sourceTree = "<group>"; };
+		8DD5B1CE1B3D621800B15D9E /* TimeRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeRanking.h; sourceTree = "<group>"; };
+		8DD5B1CF1B3D621800B15D9E /* TimeRanking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeRanking.m; sourceTree = "<group>"; };
+		8DD5B1D81B3D622300B15D9E /* TileBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileBoard.h; sourceTree = "<group>"; };
+		8DD5B1D91B3D622300B15D9E /* TileBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileBoard.m; sourceTree = "<group>"; };
+		8DD5B1DA1B3D622300B15D9E /* TileBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileBoardView.h; sourceTree = "<group>"; };
+		8DD5B1DB1B3D622300B15D9E /* TileBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileBoardView.m; sourceTree = "<group>"; };
+		8DD5B1DC1B3D622300B15D9E /* TilePuzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilePuzzle.h; sourceTree = "<group>"; };
+		B720993F1A15A39200D516BF /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
+		B72099401A15A39200D516BF /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
+		B723E1431A199537000625A9 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		B723E1441A199537000625A9 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		B724D8521A1AF9180022F064 /* AppiariesSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppiariesSDK.framework; sourceTree = "<group>"; };
+		B75FA4B31A19ABB20000F5BE /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		B75FA4B41A19ABB20000F5BE /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		B75FA4B61A19B1A40000F5BE /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingViewController.h; sourceTree = "<group>"; };
+		B75FA4B71A19B1A40000F5BE /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingViewController.m; sourceTree = "<group>"; };
+		B7974D5F1A14602E00973335 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		B7974D601A14602E00973335 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		B7D2F0C21A1200EC009E8869 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		B7D2F0C31A1200EC009E8869 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		C5ADA5EFE0B642195B13D8B9 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
+		C5ADA6296DAC953C9BC32AA1 /* RankingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingViewCell.h; sourceTree = "<group>"; };
+		C5ADA98DDBBDCF2B81A94943 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
+		C5ADAA94B5C3B9080098601E /* PreferenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceHelper.h; sourceTree = "<group>"; };
+		C5ADAB2812AD1D2E21C2D68F /* RankingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingViewCell.m; sourceTree = "<group>"; };
+		C5ADAE52FE60445D36188219 /* PreferenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceHelper.m; sourceTree = "<group>"; };
+		D62552C71A1DA79000B700D8 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		D62552C81A1DA79000B700D8 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		D63B7AF419EE5CCE00B0C93D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D68D0CDA1A1DC8AB00D7CD45 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		D68D0CDB1A1DC8AB00D7CD45 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		E1439CA682FBA239B2CC1CB9 /* Pods-Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Puzzle/Pods-Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		F53520C419ED09EE008F5AED /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53520C719ED09EE008F5AED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F53520C919ED09EE008F5AED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F53520CB19ED09EE008F5AED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F53520D119ED09EE008F5AED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F53520D319ED09EE008F5AED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F53520D619ED09EE008F5AED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F53520D719ED09EE008F5AED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F53520DA19ED09EE008F5AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F535210919ED3847008F5AED /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		F535210A19ED3847008F5AED /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		F5A243D41A11F1310058BC28 /* Configurations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configurations.h; sourceTree = "<group>"; };
+		F5A243D51A11F1510058BC28 /* Puzzle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Puzzle-Info.plist"; sourceTree = "<group>"; };
+		F5A243D61A11F1510058BC28 /* Puzzle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Puzzle-Prefix.pch"; sourceTree = "<group>"; };
+		FF423A21F46ECDE7E8634D8B /* Pods-Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Puzzle/Pods-Puzzle.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F53520C119ED09EE008F5AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53520CA19ED09EE008F5AED /* CoreGraphics.framework in Frameworks */,
+				F53520C819ED09EE008F5AED /* Foundation.framework in Frameworks */,
+				F53520CC19ED09EE008F5AED /* UIKit.framework in Frameworks */,
+				B724D8531A1AF9180022F064 /* AppiariesSDK.framework in Frameworks */,
+				6682F0475AAD4E78865D6604 /* libPods-Puzzle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8479704770C385FAF95E3552 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1439CA682FBA239B2CC1CB9 /* Pods-Puzzle.debug.xcconfig */,
+				FF423A21F46ECDE7E8634D8B /* Pods-Puzzle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DD5B1C11B3D621800B15D9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5B1C21B3D621800B15D9E /* FirstComeRanking.h */,
+				8DD5B1C31B3D621800B15D9E /* FirstComeRanking.m */,
+				8DD5B1C41B3D621800B15D9E /* FirstComeRankingSequence.h */,
+				8DD5B1C51B3D621800B15D9E /* FirstComeRankingSequence.m */,
+				8DD5B1C61B3D621800B15D9E /* Image.h */,
+				8DD5B1C71B3D621800B15D9E /* Image.m */,
+				8DD5B1C81B3D621800B15D9E /* Introduction.h */,
+				8DD5B1C91B3D621800B15D9E /* Introduction.m */,
+				8DD5B1CA1B3D621800B15D9E /* Player.h */,
+				8DD5B1CB1B3D621800B15D9E /* Player.m */,
+				8DD5B1CC1B3D621800B15D9E /* Stage.h */,
+				8DD5B1CD1B3D621800B15D9E /* Stage.m */,
+				8DD5B1CE1B3D621800B15D9E /* TimeRanking.h */,
+				8DD5B1CF1B3D621800B15D9E /* TimeRanking.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DD5B1D71B3D622300B15D9E /* TilePuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5B1D81B3D622300B15D9E /* TileBoard.h */,
+				8DD5B1D91B3D622300B15D9E /* TileBoard.m */,
+				8DD5B1DA1B3D622300B15D9E /* TileBoardView.h */,
+				8DD5B1DB1B3D622300B15D9E /* TileBoardView.m */,
+				8DD5B1DC1B3D622300B15D9E /* TilePuzzle.h */,
+			);
+			path = TilePuzzle;
+			sourceTree = "<group>";
+		};
+		C5ADA0A2505590A2181C09DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31CD9126D0438064F8417D67 /* UIImage+Resize.h */,
+				31CD9B7FDD07AD0027889E22 /* UIImage+Resize.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5ADA5C93C406B2A1E06EF38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5B1D71B3D622300B15D9E /* TilePuzzle */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C5ADA6F1AB79D672315A6781 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADA0A2505590A2181C09DC /* Extensions */,
+				C5ADAB76B1E8DEA2F0B88E35 /* Helpers */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C5ADAB76B1E8DEA2F0B88E35 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADAA94B5C3B9080098601E /* PreferenceHelper.h */,
+				C5ADAE52FE60445D36188219 /* PreferenceHelper.m */,
+				C5ADA5EFE0B642195B13D8B9 /* Validator.h */,
+				C5ADA98DDBBDCF2B81A94943 /* Validator.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C5ADACD1434B6DDF82D63B21 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADA6296DAC953C9BC32AA1 /* RankingViewCell.h */,
+				C5ADAB2812AD1D2E21C2D68F /* RankingViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F53520BB19ED09EE008F5AED = {
+			isa = PBXGroup;
+			children = (
+				F53520C619ED09EE008F5AED /* Frameworks */,
+				F53520C519ED09EE008F5AED /* Products */,
+				F53520CD19ED09EE008F5AED /* Puzzle */,
+				8479704770C385FAF95E3552 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F53520C519ED09EE008F5AED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F53520C419ED09EE008F5AED /* Puzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53520C619ED09EE008F5AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B724D8521A1AF9180022F064 /* AppiariesSDK.framework */,
+				F53520C919ED09EE008F5AED /* CoreGraphics.framework */,
+				F53520C719ED09EE008F5AED /* Foundation.framework */,
+				F53520CB19ED09EE008F5AED /* UIKit.framework */,
+				125823707CACC23C80273F18 /* libPods-Puzzle.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53520CD19ED09EE008F5AED /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADA5C93C406B2A1E06EF38 /* Components */,
+				F535210819ED3847008F5AED /* Controllers */,
+				F535210B19ED3847008F5AED /* Library */,
+				8DD5B1C11B3D621800B15D9E /* Models */,
+				C5ADA6F1AB79D672315A6781 /* Support */,
+				F53520CE19ED09EE008F5AED /* Supporting Files */,
+				D63B7AF419EE5CCE00B0C93D /* Images.xcassets */,
+				F53520D919ED09EE008F5AED /* Main.storyboard */,
+				F53520D619ED09EE008F5AED /* AppDelegate.h */,
+				F53520D719ED09EE008F5AED /* AppDelegate.m */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+		F53520CE19ED09EE008F5AED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53520D019ED09EE008F5AED /* InfoPlist.strings */,
+				F53520D319ED09EE008F5AED /* main.m */,
+				F5A243D51A11F1510058BC28 /* Puzzle-Info.plist */,
+				F5A243D61A11F1510058BC28 /* Puzzle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F535210819ED3847008F5AED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADACD1434B6DDF82D63B21 /* Cell */,
+				B720993F1A15A39200D516BF /* IntroductionViewController.h */,
+				B72099401A15A39200D516BF /* IntroductionViewController.m */,
+				B7D2F0C21A1200EC009E8869 /* LogInViewController.h */,
+				B7D2F0C31A1200EC009E8869 /* LogInViewController.m */,
+				D62552C71A1DA79000B700D8 /* PlayViewController.h */,
+				D62552C81A1DA79000B700D8 /* PlayViewController.m */,
+				B75FA4B61A19B1A40000F5BE /* RankingViewController.h */,
+				B75FA4B71A19B1A40000F5BE /* RankingViewController.m */,
+				B75FA4B31A19ABB20000F5BE /* ResultViewController.h */,
+				B75FA4B41A19ABB20000F5BE /* ResultViewController.m */,
+				D68D0CDA1A1DC8AB00D7CD45 /* SampleViewController.h */,
+				D68D0CDB1A1DC8AB00D7CD45 /* SampleViewController.m */,
+				B7974D5F1A14602E00973335 /* SignUpViewController.h */,
+				B7974D601A14602E00973335 /* SignUpViewController.m */,
+				F535210919ED3847008F5AED /* SplashViewController.h */,
+				F535210A19ED3847008F5AED /* SplashViewController.m */,
+				B723E1431A199537000625A9 /* TopViewController.h */,
+				B723E1441A199537000625A9 /* TopViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F535210B19ED3847008F5AED /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F5A243D41A11F1310058BC28 /* Configurations.h */,
+				31CD90A631D0EF5ABFB5A3ED /* Constants.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F53520C319ED09EE008F5AED /* Puzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53520F619ED09EE008F5AED /* Build configuration list for PBXNativeTarget "Puzzle" */;
+			buildPhases = (
+				94C90C2D16314D8E18B6182B /* [CP] Check Pods Manifest.lock */,
+				F53520C019ED09EE008F5AED /* Sources */,
+				F53520C119ED09EE008F5AED /* Frameworks */,
+				F53520C219ED09EE008F5AED /* Resources */,
+				95FE965A107459191902D1BD /* [CP] Embed Pods Frameworks */,
+				7F7AFEF2427A128ACFFED217 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Puzzle;
+			productName = Puzzle;
+			productReference = F53520C419ED09EE008F5AED /* Puzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F53520BC19ED09EE008F5AED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Appiaries;
+				TargetAttributes = {
+					F53520C319ED09EE008F5AED = {
+						DevelopmentTeam = JQNK74493B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F53520BF19ED09EE008F5AED /* Build configuration list for PBXProject "Puzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F53520BB19ED09EE008F5AED;
+			productRefGroup = F53520C519ED09EE008F5AED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F53520C319ED09EE008F5AED /* Puzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F53520C219ED09EE008F5AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D79A51C1A8DCCEA00C1C7A1 /* Main.storyboard in Resources */,
+				D63B7AF519EE5CCE00B0C93D /* Images.xcassets in Resources */,
+				F53520D219ED09EE008F5AED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F7AFEF2427A128ACFFED217 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puzzle/Pods-Puzzle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C90C2D16314D8E18B6182B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95FE965A107459191902D1BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puzzle/Pods-Puzzle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F53520C019ED09EE008F5AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75FA4B51A19ABB20000F5BE /* ResultViewController.m in Sources */,
+				F535211819ED3847008F5AED /* SplashViewController.m in Sources */,
+				8DD5B1DD1B3D622300B15D9E /* TileBoard.m in Sources */,
+				B75FA4B81A19B1A40000F5BE /* RankingViewController.m in Sources */,
+				8DD5B1D01B3D621800B15D9E /* FirstComeRanking.m in Sources */,
+				8DD5B1D41B3D621800B15D9E /* Player.m in Sources */,
+				B7D2F0C41A1200EC009E8869 /* LogInViewController.m in Sources */,
+				B7974D611A14602E00973335 /* SignUpViewController.m in Sources */,
+				8DD5B1D61B3D621800B15D9E /* TimeRanking.m in Sources */,
+				D62552C91A1DA79000B700D8 /* PlayViewController.m in Sources */,
+				D68D0CDC1A1DC8AB00D7CD45 /* SampleViewController.m in Sources */,
+				B723E1451A199537000625A9 /* TopViewController.m in Sources */,
+				F53520D819ED09EE008F5AED /* AppDelegate.m in Sources */,
+				F53520D419ED09EE008F5AED /* main.m in Sources */,
+				B72099411A15A39200D516BF /* IntroductionViewController.m in Sources */,
+				C5ADAF9AE2FE3BA51A3A4034 /* RankingViewCell.m in Sources */,
+				C5ADAC98EEFC23E114598E08 /* PreferenceHelper.m in Sources */,
+				8DD5B1D51B3D621800B15D9E /* Stage.m in Sources */,
+				8DD5B1D11B3D621800B15D9E /* FirstComeRankingSequence.m in Sources */,
+				8DD5B1DE1B3D622300B15D9E /* TileBoardView.m in Sources */,
+				8DD5B1D21B3D621800B15D9E /* Image.m in Sources */,
+				C5ADA790A7272BF75FAEF6D1 /* Validator.m in Sources */,
+				8DD5B1D31B3D621800B15D9E /* Introduction.m in Sources */,
+				31CD987114E2B9442D8FA95E /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F53520D019ED09EE008F5AED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53520D119ED09EE008F5AED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F53520D919ED09EE008F5AED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53520DA19ED09EE008F5AED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F53520F419ED09EE008F5AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F53520F519ED09EE008F5AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F53520F719ED09EE008F5AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1439CA682FBA239B2CC1CB9 /* Pods-Puzzle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Puzzle/Puzzle-Prefix.pch";
+				INFOPLIST_FILE = "Puzzle/Puzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F53520F819ED09EE008F5AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF423A21F46ECDE7E8634D8B /* Pods-Puzzle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Puzzle/Puzzle-Prefix.pch";
+				INFOPLIST_FILE = "Puzzle/Puzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F53520BF19ED09EE008F5AED /* Build configuration list for PBXProject "Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53520F419ED09EE008F5AED /* Debug */,
+				F53520F519ED09EE008F5AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53520F619ED09EE008F5AED /* Build configuration list for PBXNativeTarget "Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53520F719ED09EE008F5AED /* Debug */,
+				F53520F819ED09EE008F5AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F53520BC19ED09EE008F5AED /* Project object */;
+}
