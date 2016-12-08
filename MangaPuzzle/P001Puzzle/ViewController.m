@@ -30,7 +30,7 @@ int breakBtnStatus =1;
     switch (breakBtnStatus) {
         case 1:
             breakBtnStatus=2;
-            [breakBtn setTitle:@"停止" forState:UIControlStateNormal];
+            [breakBtn setTitle:@"Pause" forState:UIControlStateNormal];
             
             showSourceBtn.hidden=YES;
             changeImageBtn.hidden=YES;            
@@ -38,7 +38,7 @@ int breakBtnStatus =1;
             break;
         case 2:
             breakBtnStatus=1;
-            [breakBtn setTitle:@"打乱" forState:UIControlStateNormal];
+            [breakBtn setTitle:@"Upset" forState:UIControlStateNormal];
             
             showSourceBtn.hidden=NO;
             changeImageBtn.hidden=NO;    
@@ -52,7 +52,7 @@ int breakBtnStatus =1;
 
 
 -(void)changeImageBtnPressed:(id)sender{
-    [[[UIActionSheet alloc] initWithTitle:@"选择图片来源" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"内置图片",@"照像机",@"图库",@"相册", nil] showInView:self.view];
+    [[[UIActionSheet alloc] initWithTitle:@"Select source image" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Puzzle image",@"Camera",@"Gallery",@"Album", nil] showInView:self.view];
 }
 
 
@@ -74,7 +74,7 @@ int breakBtnStatus =1;
                 upc.delegate=self;
                 [self presentModalViewController:upc animated:YES];
             }else {
-                [[[UIAlertView alloc] initWithTitle:@"提示" message:@"亲爱的主人，您的设备没有摄像头哦！" delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil] show];
+                [[[UIAlertView alloc] initWithTitle:@"Promt" message:@"Dear friend, your device does not have a camera!" delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil] show];
             }
             
             break;

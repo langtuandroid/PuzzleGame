@@ -160,7 +160,7 @@
 
 -(void)checkToShowDialog{
     if ([self checkSuccess]) {
-        [[[UIAlertView alloc] initWithTitle:@"恭喜您" message:@"拼图成功" delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Congratulations" message:@"You solved it!" delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil] show];
     }
 }
 
