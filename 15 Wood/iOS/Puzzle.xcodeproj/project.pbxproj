@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		977F453A1DF8ECB5008ABA10 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977F45391DF8ECB5008ABA10 /* Media.xcassets */; };
+		977F453C1DF8EE5B008ABA10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 977F453B1DF8EE5B008ABA10 /* Default-568h@2x.png */; };
 		B70858E2160EFEC7007B1204 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B70858E1160EFEC7007B1204 /* Default@2x.png */; };
 		B70858E6160F96BA007B1204 /* PZHighscoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70858E4160F96B9007B1204 /* PZHighscoresViewController.m */; };
 		B70858E7160F96BA007B1204 /* PZHighscoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B70858E5160F96BA007B1204 /* PZHighscoresViewController.xib */; };
@@ -70,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		977F45391DF8ECB5008ABA10 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		977F453B1DF8EE5B008ABA10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B70858E1160EFEC7007B1204 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Puzzle/Resources/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		B70858E3160F96B8007B1204 /* PZHighscoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZHighscoresViewController.h; sourceTree = "<group>"; };
 		B70858E4160F96B9007B1204 /* PZHighscoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZHighscoresViewController.m; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 		B7AEF1B0159C15F8006EFEF0 = {
 			isa = PBXGroup;
 			children = (
+				977F453B1DF8EE5B008ABA10 /* Default-568h@2x.png */,
+				977F45391DF8ECB5008ABA10 /* Media.xcassets */,
 				B7AEF1C5159C15F8006EFEF0 /* Puzzle */,
 				B7AEF1E6159C15F9006EFEF0 /* PuzzleTests */,
 				B7AEF1BE159C15F8006EFEF0 /* Frameworks */,
@@ -368,6 +374,12 @@
 			attributes = {
 				CLASSPREFIX = PZ;
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					B7AEF1BA159C15F8006EFEF0 = {
+						DevelopmentTeam = JQNK74493B;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = B7AEF1B5159C15F8006EFEF0 /* Build configuration list for PBXProject "Puzzle" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -397,9 +409,11 @@
 				B7AEF1D9159C15F8006EFEF0 /* PZViewController_iPad.xib in Resources */,
 				B7EEBE2215A0E69600EC5BBB /* Default.png in Resources */,
 				B7EEBE3515A0EE9200EC5BBB /* Icon.png in Resources */,
+				977F453A1DF8ECB5008ABA10 /* Media.xcassets in Resources */,
 				B7EEBE3615A0EE9200EC5BBB /* Icon@2x.png in Resources */,
 				B7B00A5E15FF0C840085434D /* Background_iPhone.png in Resources */,
 				B7B00A5F15FF0C840085434D /* Tiles_iPhone.png in Resources */,
+				977F453C1DF8EE5B008ABA10 /* Default-568h@2x.png in Resources */,
 				B7B00A6615FF170C0085434D /* Frame_iPhone.png in Resources */,
 				B7BA97D515FF1D5B002E296D /* Background_iPhone@2x.png in Resources */,
 				B7BA97D815FF1D6A002E296D /* Frame_iPhone@2x.png in Resources */,
@@ -616,9 +630,14 @@
 		B7AEF1F2159C15F9006EFEF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Puzzle/Puzzle-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.puzzle15wood.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -628,9 +647,14 @@
 		B7AEF1F3159C15F9006EFEF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Puzzle/Puzzle-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.puzzle15wood.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
