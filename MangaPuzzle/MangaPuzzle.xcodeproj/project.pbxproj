@@ -50,21 +50,21 @@
 		C74F5266156B98E200A0190F /* innerimgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = innerimgs.plist; sourceTree = "<group>"; };
 		C74F5269156B99FA00A0190F /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		C74F526A156B99FA00A0190F /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
-		C7785B5D1564C28700AC3C51 /* P001Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P001Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7785B5D1564C28700AC3C51 /* MangaPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7785B611564C28700AC3C51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7785B631564C28700AC3C51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7785B651564C28700AC3C51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C7785B691564C28700AC3C51 /* P001Puzzle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "P001Puzzle-Info.plist"; sourceTree = "<group>"; };
+		C7785B691564C28700AC3C51 /* MangaPuzzle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangaPuzzle-Info.plist"; sourceTree = "<group>"; };
 		C7785B6B1564C28700AC3C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7785B6D1564C28700AC3C51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C7785B6F1564C28700AC3C51 /* P001Puzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "P001Puzzle-Prefix.pch"; sourceTree = "<group>"; };
+		C7785B6F1564C28700AC3C51 /* MangaPuzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MangaPuzzle-Prefix.pch"; sourceTree = "<group>"; };
 		C7785B701564C28700AC3C51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7785B711564C28700AC3C51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C7785B741564C28700AC3C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C7785B761564C28700AC3C51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C7785B771564C28700AC3C51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C7785B7E1564C28800AC3C51 /* P001PuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P001PuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7785B871564C28800AC3C51 /* P001PuzzleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "P001PuzzleTests-Info.plist"; sourceTree = "<group>"; };
+		C7785B7E1564C28800AC3C51 /* MangaPuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaPuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7785B871564C28800AC3C51 /* MangaPuzzleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangaPuzzleTests-Info.plist"; sourceTree = "<group>"; };
 		C7785B891564C28800AC3C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7785B8B1564C28800AC3C51 /* P001PuzzleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P001PuzzleTests.h; sourceTree = "<group>"; };
 		C7785B8C1564C28800AC3C51 /* P001PuzzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P001PuzzleTests.m; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 		C7785B5E1564C28700AC3C51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7785B5D1564C28700AC3C51 /* P001Puzzle.app */,
-				C7785B7E1564C28800AC3C51 /* P001PuzzleTests.xctest */,
+				C7785B5D1564C28700AC3C51 /* MangaPuzzle.app */,
+				C7785B7E1564C28800AC3C51 /* MangaPuzzleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,10 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				C7785BA81564C3CE00AC3C51 /* imgs */,
-				C7785B691564C28700AC3C51 /* P001Puzzle-Info.plist */,
+				C7785B691564C28700AC3C51 /* MangaPuzzle-Info.plist */,
 				C7785B6A1564C28700AC3C51 /* InfoPlist.strings */,
 				C7785B6D1564C28700AC3C51 /* main.m */,
-				C7785B6F1564C28700AC3C51 /* P001Puzzle-Prefix.pch */,
+				C7785B6F1564C28700AC3C51 /* MangaPuzzle-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 		C7785B861564C28800AC3C51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C7785B871564C28800AC3C51 /* P001PuzzleTests-Info.plist */,
+				C7785B871564C28800AC3C51 /* MangaPuzzleTests-Info.plist */,
 				C7785B881564C28800AC3C51 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -220,9 +220,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C7785B5C1564C28700AC3C51 /* P001Puzzle */ = {
+		C7785B5C1564C28700AC3C51 /* MangaPuzzle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7785B901564C28800AC3C51 /* Build configuration list for PBXNativeTarget "P001Puzzle" */;
+			buildConfigurationList = C7785B901564C28800AC3C51 /* Build configuration list for PBXNativeTarget "MangaPuzzle" */;
 			buildPhases = (
 				C7785B591564C28700AC3C51 /* Sources */,
 				C7785B5A1564C28700AC3C51 /* Frameworks */,
@@ -233,14 +233,14 @@
 			);
 			dependencies = (
 			);
-			name = P001Puzzle;
+			name = MangaPuzzle;
 			productName = P001Puzzle;
-			productReference = C7785B5D1564C28700AC3C51 /* P001Puzzle.app */;
+			productReference = C7785B5D1564C28700AC3C51 /* MangaPuzzle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C7785B7D1564C28800AC3C51 /* P001PuzzleTests */ = {
+		C7785B7D1564C28800AC3C51 /* MangaPuzzleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7785B931564C28800AC3C51 /* Build configuration list for PBXNativeTarget "P001PuzzleTests" */;
+			buildConfigurationList = C7785B931564C28800AC3C51 /* Build configuration list for PBXNativeTarget "MangaPuzzleTests" */;
 			buildPhases = (
 				C7785B791564C28800AC3C51 /* Sources */,
 				C7785B7A1564C28800AC3C51 /* Frameworks */,
@@ -252,9 +252,9 @@
 			dependencies = (
 				C7785B841564C28800AC3C51 /* PBXTargetDependency */,
 			);
-			name = P001PuzzleTests;
+			name = MangaPuzzleTests;
 			productName = P001PuzzleTests;
-			productReference = C7785B7E1564C28800AC3C51 /* P001PuzzleTests.xctest */;
+			productReference = C7785B7E1564C28800AC3C51 /* MangaPuzzleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -271,7 +271,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C7785B571564C28700AC3C51 /* Build configuration list for PBXProject "P001Puzzle" */;
+			buildConfigurationList = C7785B571564C28700AC3C51 /* Build configuration list for PBXProject "MangaPuzzle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -283,8 +283,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C7785B5C1564C28700AC3C51 /* P001Puzzle */,
-				C7785B7D1564C28800AC3C51 /* P001PuzzleTests */,
+				C7785B5C1564C28700AC3C51 /* MangaPuzzle */,
+				C7785B7D1564C28800AC3C51 /* MangaPuzzleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,7 +374,7 @@
 /* Begin PBXTargetDependency section */
 		C7785B841564C28800AC3C51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C7785B5C1564C28700AC3C51 /* P001Puzzle */;
+			target = C7785B5C1564C28700AC3C51 /* MangaPuzzle */;
 			targetProxy = C7785B831564C28800AC3C51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,8 +466,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "P001Puzzle/P001Puzzle-Prefix.pch";
-				INFOPLIST_FILE = "P001Puzzle/P001Puzzle-Info.plist";
+				GCC_PREFIX_HEADER = "P001Puzzle/MangaPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "P001Puzzle/MangaPuzzle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.puzzlegame.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,8 +481,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "P001Puzzle/P001Puzzle-Prefix.pch";
-				INFOPLIST_FILE = "P001Puzzle/P001Puzzle-Info.plist";
+				GCC_PREFIX_HEADER = "P001Puzzle/MangaPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "P001Puzzle/MangaPuzzle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.puzzlegame.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +500,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "P001Puzzle/P001Puzzle-Prefix.pch";
-				INFOPLIST_FILE = "P001PuzzleTests/P001PuzzleTests-Info.plist";
+				INFOPLIST_FILE = "P001PuzzleTests/MangaPuzzleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -516,7 +516,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "P001Puzzle/P001Puzzle-Prefix.pch";
-				INFOPLIST_FILE = "P001PuzzleTests/P001PuzzleTests-Info.plist";
+				INFOPLIST_FILE = "P001PuzzleTests/MangaPuzzleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -525,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7785B571564C28700AC3C51 /* Build configuration list for PBXProject "P001Puzzle" */ = {
+		C7785B571564C28700AC3C51 /* Build configuration list for PBXProject "MangaPuzzle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7785B8E1564C28800AC3C51 /* Debug */,
@@ -534,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7785B901564C28800AC3C51 /* Build configuration list for PBXNativeTarget "P001Puzzle" */ = {
+		C7785B901564C28800AC3C51 /* Build configuration list for PBXNativeTarget "MangaPuzzle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7785B911564C28800AC3C51 /* Debug */,
@@ -543,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7785B931564C28800AC3C51 /* Build configuration list for PBXNativeTarget "P001PuzzleTests" */ = {
+		C7785B931564C28800AC3C51 /* Build configuration list for PBXNativeTarget "MangaPuzzleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7785B941564C28800AC3C51 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C7785B5C1564C28700AC3C51"
-               BuildableName = "P001Puzzle.app"
-               BlueprintName = "P001Puzzle"
-               ReferencedContainer = "container:P001Puzzle.xcodeproj">
+               BuildableName = "MangaPuzzle.app"
+               BlueprintName = "MangaPuzzle"
+               ReferencedContainer = "container:MangaPuzzle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C7785B7D1564C28800AC3C51"
-               BuildableName = "P001PuzzleTests.xctest"
-               BlueprintName = "P001PuzzleTests"
-               ReferencedContainer = "container:P001Puzzle.xcodeproj">
+               BuildableName = "MangaPuzzleTests.xctest"
+               BlueprintName = "MangaPuzzleTests"
+               ReferencedContainer = "container:MangaPuzzle.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C7785B5C1564C28700AC3C51"
-            BuildableName = "P001Puzzle.app"
-            BlueprintName = "P001Puzzle"
-            ReferencedContainer = "container:P001Puzzle.xcodeproj">
+            BuildableName = "MangaPuzzle.app"
+            BlueprintName = "MangaPuzzle"
+            ReferencedContainer = "container:MangaPuzzle.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C7785B5C1564C28700AC3C51"
-            BuildableName = "P001Puzzle.app"
-            BlueprintName = "P001Puzzle"
-            ReferencedContainer = "container:P001Puzzle.xcodeproj">
+            BuildableName = "MangaPuzzle.app"
+            BlueprintName = "MangaPuzzle"
+            ReferencedContainer = "container:MangaPuzzle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C7785B5C1564C28700AC3C51"
-            BuildableName = "P001Puzzle.app"
-            BlueprintName = "P001Puzzle"
-            ReferencedContainer = "container:P001Puzzle.xcodeproj">
+            BuildableName = "MangaPuzzle.app"
+            BlueprintName = "MangaPuzzle"
+            ReferencedContainer = "container:MangaPuzzle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
