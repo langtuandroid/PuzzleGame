@@ -265,6 +265,11 @@
 			attributes = {
 				LastTestingUpgradeCheck = 0720;
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					C7785B5C1564C28700AC3C51 = {
+						DevelopmentTeam = JQNK74493B;
+					};
+				};
 			};
 			buildConfigurationList = C7785B571564C28700AC3C51 /* Build configuration list for PBXProject "P001Puzzle" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -458,12 +463,13 @@
 		C7785B911564C28800AC3C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "P001Puzzle/P001Puzzle-Prefix.pch";
 				INFOPLIST_FILE = "P001Puzzle/P001Puzzle-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.puzzlegame.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -472,12 +478,13 @@
 		C7785B921564C28800AC3C51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "P001Puzzle/P001Puzzle-Prefix.pch";
 				INFOPLIST_FILE = "P001Puzzle/P001Puzzle-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.puzzlegame.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
