@@ -1,8 +1,0 @@
-CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/SHNavigationControllerBlocks
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/SHNavigationControllerBlocks" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworkActivityLogger" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/SHActionSheetBlocks" "${PODS_ROOT}/Headers/Public/SHAlertViewBlocks" "${PODS_ROOT}/Headers/Public/SHBarButtonItemBlocks" "${PODS_ROOT}/Headers/Public/SHControlBlocks" "${PODS_ROOT}/Headers/Public/SHGestureRecognizerBlocks" "${PODS_ROOT}/Headers/Public/SHNavigationControllerBlocks" "${PODS_ROOT}/Headers/Public/SHObjectUserInfo" "${PODS_ROOT}/Headers/Public/SHPopoverControllerBlocks" "${PODS_ROOT}/Headers/Public/SHSegueBlocks" "${PODS_ROOT}/Headers/Public/SHTabBarControllerBlocks" "${PODS_ROOT}/Headers/Public/SHTextFieldBlocks" "${PODS_ROOT}/Headers/Public/SHTextViewBlocks" "${PODS_ROOT}/Headers/Public/SHTransitionBlocks" "${PODS_ROOT}/Headers/Public/SHUIKitBlocks" "${PODS_ROOT}/Headers/Public/SHWebViewBlocks" "${PODS_ROOT}/Headers/Public/SVProgressHUD"
-PODS_BUILD_DIR = $BUILD_DIR
-PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-PODS_ROOT = ${SRCROOT}
-PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
-SKIP_INSTALL = YES
