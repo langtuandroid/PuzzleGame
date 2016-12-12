@@ -282,6 +282,7 @@
 	_picker = [[[UIImagePickerController alloc] init] retain];
 	_picker.delegate = self;
 	_picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    _picker.modalPresentationStyle = UIModalPresentationFormSheet;
 	_picker.extendedLayoutIncludesOpaqueBars = YES;
     _picker.allowsEditing = NO;
     CGRect r = CGRectMake(screenSize.width/2,0,10,10);

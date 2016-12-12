@@ -15,6 +15,10 @@
 
 @synthesize window=window_, navController=navController_, director=director_;
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
