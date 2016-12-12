@@ -282,7 +282,7 @@
 	_picker = [[[UIImagePickerController alloc] init] retain];
 	_picker.delegate = self;
 	_picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-	_picker.wantsFullScreenLayout = YES;
+	_picker.extendedLayoutIncludesOpaqueBars = YES;
     _picker.allowsEditing = NO;
     CGRect r = CGRectMake(screenSize.width/2,0,10,10);
 
@@ -294,7 +294,7 @@
             permittedArrowDirections:0 animated:YES];
         _popover.popoverContentSize = CGSizeMake(320, screenSize.width);
     }else{
-        [director presentModalViewController:_picker animated:YES];
+        [director presentViewController:_picker animated:YES completion:nil];
     }
 }
 
@@ -415,3 +415,5 @@
 }
 
 @end
+
+

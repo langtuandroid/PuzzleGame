@@ -317,6 +317,7 @@
 		11073E13197365D4001EDD34 /* LevelNormalLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11073E05197365D4001EDD34 /* LevelNormalLayer.m */; };
 		11073E14197365D4001EDD34 /* PuzzleSelectionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11073E07197365D4001EDD34 /* PuzzleSelectionLayer.m */; };
 		11303CE2197367CB00748C2C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11303CE1197367CB00748C2C /* Default-568h@2x.png */; };
+		97933FCC1DFF02EB0049297D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97933FCB1DFF02EB0049297D /* Media.xcassets */; };
 		97F9A94F15E1D3D900C17D90 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F9A94E15E1D3D900C17D90 /* QuartzCore.framework */; };
 		97F9A95115E1D3D900C17D90 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F9A95015E1D3D900C17D90 /* OpenGLES.framework */; };
 		97F9A95315E1D3D900C17D90 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F9A95215E1D3D900C17D90 /* OpenAL.framework */; };
@@ -784,6 +785,7 @@
 		11073E06197365D4001EDD34 /* PuzzleSelectionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleSelectionLayer.h; sourceTree = "<group>"; };
 		11073E07197365D4001EDD34 /* PuzzleSelectionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleSelectionLayer.m; sourceTree = "<group>"; };
 		11303CE1197367CB00748C2C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		97933FCB1DFF02EB0049297D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		97F9A94A15E1D3D900C17D90 /* talele.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talele.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F9A94E15E1D3D900C17D90 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		97F9A95015E1D3D900C17D90 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1447,6 +1449,7 @@
 		97F9A93F15E1D3D900C17D90 = {
 			isa = PBXGroup;
 			children = (
+				97933FCB1DFF02EB0049297D /* Media.xcassets */,
 				97F9A96015E1D3D900C17D90 /* Talele */,
 				97F9A94D15E1D3D900C17D90 /* Frameworks */,
 				97F9A94B15E1D3D900C17D90 /* Products */,
@@ -1593,6 +1596,7 @@
 				11073D86197365B0001EDD34 /* mega-cloud-ipadhd.png in Resources */,
 				11073D48197365B0001EDD34 /* background-gameplay-normal-hd.png in Resources */,
 				11073D76197365B0001EDD34 /* credits-ipadhd.png in Resources */,
+				97933FCC1DFF02EB0049297D /* Media.xcassets in Resources */,
 				11073DA2197365B0001EDD34 /* pieces_8x6_bevel-ipad.png in Resources */,
 				11073D95197365B0001EDD34 /* pieces_6x4-hd.png in Resources */,
 				11073DAC197365B0001EDD34 /* buttons-ipad.plist in Resources */,
@@ -1969,6 +1973,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -1984,6 +1990,7 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.instanature.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1996,6 +2003,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -2010,6 +2019,7 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.instanature.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
